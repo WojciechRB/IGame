@@ -1,0 +1,23 @@
+Ciało:
+- masa
+- prędkość
+- przyspieszenie
+- położenie
+- wektor_ruchu
+
+struct body{
+   float mass;
+   vec2 velocity;
+   vec2 acceleration;
+   vec2 position;
+   vec2 mvm;
+   vec2 force;
+}
+
+\begin{math}
+\text{masa} \in (0, +\infty); \\
+\text{prędkość} = [x,y]; x,y \in (-\infty, +\infty); \\
+\text{przyspieszenie} = [x,y]; x,y \in (-\infty, +\infty); \\
+\text{położenie} = [x,y]; x,y \in (-\infty, +\infty); \\
+\text{wektor_ruchu} = [x,y]; x,y \in {-1,0,1}; \\
+\end{math}
