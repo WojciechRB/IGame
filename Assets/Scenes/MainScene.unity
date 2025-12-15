@@ -134,9 +134,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: BodyB
       objectReference: {fileID: 0}
+    - target: {fileID: 554738099393537972, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 554738099393537972, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268344588317851109, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
+      propertyPath: mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268344588317851109, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
+      propertyPath: force.x
+      value: -0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1268344588317851109, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
       propertyPath: isRandom
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268344588317851109, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
+      propertyPath: position.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1945986676659227585, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
       propertyPath: m_Color.b
@@ -152,7 +172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3659891104405815978, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3659891104405815978, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
       propertyPath: m_LocalPosition.y
@@ -478,7 +498,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1947016311}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -499,7 +519,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916998510}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 256, y: 256, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1822,6 +1842,14 @@ PrefabInstance:
     - target: {fileID: 554738099393537972, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268344588317851109, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
+      propertyPath: mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268344588317851109, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
+      propertyPath: force.x
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3659891104405815978, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
       propertyPath: m_LocalPosition.x
