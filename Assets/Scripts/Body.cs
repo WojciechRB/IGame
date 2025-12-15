@@ -18,6 +18,7 @@ public class Body : MonoBehaviour
     void Start()
     {
         init();
+        Application.targetFrameRate = 128;
     }
 
     // Update is called once per frame
@@ -143,10 +144,12 @@ public class Body : MonoBehaviour
                             this.reset();
                             otherBody.reset();
                         }
-                        this.position -= this.velocity * Time.deltaTime * 0.001f;
-                        otherBody.position -= otherBody.velocity * Time.deltaTime * 0.001f;
+                        this.position -= this.velocity * Time.deltaTime * 4.25f;
+                        otherBody.position -= otherBody.velocity * Time.deltaTime * 4.25f;
                     }
                     bounceOff(otherBody);
+                    this.nullifyForce();
+                    otherBody.nullifyForce();
                 }
             }
         }

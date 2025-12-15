@@ -61,5 +61,11 @@ public class UIController : MonoBehaviour
         }
     }
 
-    private string Vec2Str(Vector2 v) => ("X: "+ Math.Round(v.x,2).ToString() + " Y: " + Math.Round(v.y, 2).ToString());
+    private string Vec2Str(Vector2 v) => ("X: " + Math.Round(v.x, 2).ToString() + " Y: " + Math.Round(v.y, 2).ToString());
+
+    public void OnResetBtnClick()
+    {
+        foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Player"))
+            gameObject.GetComponent<Body>().reset();
+    }
 }
