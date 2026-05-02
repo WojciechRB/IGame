@@ -68,11 +68,17 @@ public class UIController : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
 
-        if (player.TryGetComponent<Body>(out Body PlayerBody))
+        if (player.TryGetComponent<Ball>(out Ball PlayerBody))
             PlayerBody.reset();
 
         foreach (GameObject obj in npcs)
-            if (obj.TryGetComponent<Body>(out Body body))
+        {
+            if (obj.TryGetComponent<Ball>(out Ball ball))
+                ball.reset();
+            else if (obj.TryGetComponent<Spring>(out Spring spring))
+                spring.reset();
+            else if (obj.TryGetComponent<Body>(out Body body))
                 body.reset();
+        }
     }
 }

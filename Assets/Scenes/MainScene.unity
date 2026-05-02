@@ -2280,7 +2280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 554738099393537972, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
       propertyPath: m_TagString
-      value: NPC
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1268344588317851109, guid: 395f511019c14d24cbeef706cc82b185, type: 3}
       propertyPath: mass
