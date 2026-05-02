@@ -65,7 +65,14 @@ public class UIController : MonoBehaviour
 
     public void OnResetBtnClick()
     {
-        foreach (GameObject gameObject in GameObject.FindGameObjectsWithTag("Player"))
-            gameObject.GetComponent<Body>().reset();
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject[] npcs = GameObject.FindGameObjectsWithTag("NPC");
+
+        if (player.TryGetComponent<Body>(out Body PlayerBody))
+            PlayerBody.reset();
+
+        foreach (GameObject obj in npcs)
+            if (obj.TryGetComponent<Body>(out Body body))
+                body.reset();
     }
 }

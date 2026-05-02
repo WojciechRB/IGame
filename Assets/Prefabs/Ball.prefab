@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3659891104405815978}
   - component: {fileID: 1945986676659227585}
-  - component: {fileID: 1268344588317851109}
+  - component: {fileID: 7465702951616484273}
   m_Layer: 0
-  m_Name: Body
+  m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1268344588317851109
+--- !u!114 &7465702951616484273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,11 +94,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 554738099393537972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: febb641bdff738f47ba2064299aa8e65, type: 3}
+  m_Script: {fileID: 11500000, guid: 5ba69ec389eef1f4cac11f036fd8380e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 0
+  mass: 1
   velocity: {x: 0, y: 0}
   acceleration: {x: 0, y: 0}
   position: {x: 0, y: 0}
+  mvm: {x: 0, y: 0}
   force: {x: 0, y: 0}
+  isRandom: 0
+  others: []
